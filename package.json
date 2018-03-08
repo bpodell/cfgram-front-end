@@ -7,7 +7,11 @@
     "build": "webpack",
     "watch": "webpack-dev-server --inline --hot",
     "test": "jest",
+    "heroku-postbuild": "webpack -p --progress",
     "test:watch": "jest --watchAll"
+  },
+  "engines": {
+    "node": "9.3.0"
   },
   "jest": {
     "globals": {
@@ -53,6 +57,7 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "express": "^4.16.2",
     "redux-devtools-extension": "^2.13.2"
   }
 }
